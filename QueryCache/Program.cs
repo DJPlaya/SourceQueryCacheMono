@@ -6,9 +6,9 @@ namespace QueryCache
 {
 	class MainClass
 	{
-		private static byte[] infoCache;
-		private static byte[][] playerCache; // Jagged arrays for storing muti-packet responses.
-		private static byte[][] rulesCache;
+		private static byte[] infoCache = new byte[0];
+		private static byte[][] playerCache = new byte[0][]; // Jagged arrays for storing muti-packet responses.
+		private static byte[][] rulesCache = new byte[0][];
 		private static byte[] challengeCode = new byte[4];
 		private const int maxPacket = 1400;
 		private static int infoQueries;
